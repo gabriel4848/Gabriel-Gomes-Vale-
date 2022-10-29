@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+
+</head>
+                                                     
+  <body>
+   <section class="area-login">
+    <div class="login">
+       <div>
+       </div> 
+
+
+      <form method="POST">
+<img src="https://www.gellog.com.br/assets/imagens/avatar.png">
+        <input type="text" name="nome" placeholder="Nome de usuário" autofocus id="nome">  
+
+        <input type="password" name="senha" placeholder="Digite sua senha" id="senha">
+
+        <input type="submit" value="entrar" onclick="logar(); return false">
+
+         <input type="submit" value="cancelar"click="exit(); return">
+
+
+
+      </form>
+
+     
+    </div>
+</section>
+    
+<script>
+
+    function logar(){
+
+       var logando = document.getElementById("nome").value;
+       var senha = document.getElementById("senha").value;
+
+       if(logando == "admin" && senha =="admin"){  
+        alert("Bem vindo!")
+        location.href = "https://www.muitobemvindo.com.br/";
+        }else{
+        alert("Usuário ou senha inválidos. Tente novamente!!");
+        }
+    }
+
+</script>
+</body>
+</html> 
